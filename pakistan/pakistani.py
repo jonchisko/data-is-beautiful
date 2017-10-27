@@ -70,6 +70,50 @@ ax.set_xlabel("Date")
 ax.legend(loc=1)
 #plt.show()
 
+
+fig, ax = plt.subplots(figsize=(20,10))
+ax.fill_between(ticks, avgDeath, np.zeros(len(avgDeath)), color="cornflowerblue", alpha=0.9)
+indeksi = np.arange(0, len(ticks), len(ticks)//10)
+ax.set_xticks(indeksi)
+ax.set_xticklabels(datumi[indeksi], rotation=20)
+ax.set_ylabel("Number of deaths")
+ax.set_xlabel("Date")
+ax.set_title("Number of deaths 2")
+
+akumulativno = avgDeath.copy()
+for i in range(1, len(akumulativno)):
+    akumulativno.iloc[i] += akumulativno.iloc[i-1]
+
+fix,ax = plt.subplots(figsize=(20,10))
+ax.fill_between(ticks, akumulativno, np.zeros(len(akumulativno)), color="blue", alpha=0.7)
+indeksi = np.arange(0, len(ticks), len(ticks)//10)
+ax.set_xticks(indeksi)
+ax.set_xticklabels(datumi[indeksi], rotation=20)
+ax.set_ylabel("Number of deaths")
+ax.set_xlabel("Date")
+ax.set_title("Accumulative deaths")
+
+
+deaths_10 = []
+vsota = 0
+n = len(avgDeath)//40
+indeksi = []
+for i in range(len(avgDeath)):
+    vsota += avgDeath.iloc[i]
+    if i != 0 and i%n == 0:
+        deaths_10.append(vsota)
+        indeksi.append(i)
+        vsota = 0
+fig, ax = plt.subplots(figsize=(20,10))
+ticks = np.arange(len(deaths_10))
+
+ax.fill_between(ticks, deaths_10, np.zeros(len(deaths_10)), color="cornflowerblue", alpha=0.9)
+
+ax.set_xticks(np.arange(0, len(indeksi), len(indeksi)//10))
+ax.set_xticklabels(df2.iloc[np.arange(0, len(indeksi), len(indeksi)//10), 1], rotation=20)
+ax.set_ylabel("Number of deaths")
+ax.set_xlabel("Date")
+ax.set_title("Number of deaths 2 (multiple years combined, more pleasing to look at)")
 print("Največ smrtnih žrtev v napadu",df2['Total Died Mix'].max(),"\nNa dan:", df2.loc[df2["Total Died Mix"] == df2["Total Died Mix"].max(), "Date"])
 
 
