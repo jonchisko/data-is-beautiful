@@ -11,7 +11,7 @@ Na zgornjem grafu lahko vidimo kateri atributi korelirajo medseboj.
 ## Porazdelitev kvalitet
 ![Kvaliteta](https://github.com/jonchisko/data-is-beautiful/blob/master/redWine/Screen%20Shot%202017-10-31%20at%2016.44.25.png)
 ## Ena korelacija
-![Korelacija](https://github.com/jonchisko/data-is-beautiful/blob/master/redWine/korelacija.pdf)
+[Korelacija](https://github.com/jonchisko/data-is-beautiful/blob/master/redWine/prikazSlike.html)
 Vidimo korelacijo med:
 1) most acids involved with wine or fixed or nonvolatile (do not evaporate readily
 2) density: the density of water is close to that of water depending on the percent alcohol and sugar content
@@ -20,7 +20,7 @@ Vidimo korelacijo med:
 
 Po preurejanju atributov na scalo med 0 in 1, sem uporabil SVM in nevronsko mrežo. Primerjal sem ju z večinskim klasifikatorjem,
 rezultati pa so naslednji:
-Večinski razred je 5
-Večinski klasifikator, točnost: 0.431
-SVM: 0.589
-Nevronske: 0.628
+1) Večinski razred je 5
+2) Večinski klasifikator, točnost: 0.431
+3) SVM: 0.589
+4) Nevronske: 0.628
