@@ -1,0 +1,18 @@
+Paket,Cena (prvo leto mesecna),Cena (redna mesecna),Cena vezava dve leti,Internet (dol),Internet (gor),TV programi,TV Zamik,Mobitel(enote/min),Mobitel(enote/prenos),Mobitel(enote/sms),Telefonija (enote/min),HBO (vključen),HD programi,Oblak(GB),Poljuben Dodaten Programski Paket
+Oranžni Diamant HBO,39.99,64.99,1259.76,300,50,230,Da,Inf,10,Inf,Inf,Da,46,10,0
+Oranžni Optimum,19.99,49.99,839.76,100,10,175,Ne,1000,1,1000,0,Ne,16,10,0
+Oranžni Diamant,39.99,64.99,1259.76,300,50,230,Da,Inf,10,Inf,Inf,Ne,46,10,1
+Top Trio Start,19.95,35.95,670.8,10,2,120,Da,0,0,0,60,Ne,7,5,0
+Top Trio A ,19.95,39.95,718.8,10,2,145,Da,0,0,0,60,Ne,7,5,0
+Top Trio B,19.95,49.95,838.8,20,2,180,Da,0,0,0,200,Ne,11,5,0
+Top Trio C,19.95,58.95,946.8,30,5,255,Da,0,0,0,400,Ne,47,5,0
+T4 tera,47.23,58.98,1274.52,300,50,175,Da,100,0.100,100,100,Ne,16,30,0
+T4 giga,41.98,51.98,1127.52,200,20,175,Ne,50,0.050,50,50,Ne,16,20,0
+T4 mega,38.98,47.98,1043.52,100,10,175,Ne,0,0,0,0,Ne,16,10,0
+T3 tera,44.98,55.98,1211.52,200,20,175,Da,50,0.050,50,50,Ne,16,30,0
+T3 giga,39.73,48.98,1064.52,20,10,175,Ne,0,0,0,0,Ne,16,20,0
+T3 mega,37.48,45.98,1001.52,10,20,175,Ne,0,0,0,0,Ne,16,10,0
+T2 tvnet,38.98,47.98,1043.52,50,10,175,Ne,0,0,0,0,Ne,16,0,0
+A1 kombo S,18.99,32.99,623.76,20,1,95,Ne,0,0,0,0,Ne,6,0,0
+A1 kombo M,18.99,43.99,755.76,30,5,160,Ne,0,0,0,Inf,Ne,10,0,0
+A1 kombo L,18.99,52.99,863.76,40,10,210,Da,0,0,0,Inf,Ne,29,0,0
